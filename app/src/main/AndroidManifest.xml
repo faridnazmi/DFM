@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.company.dietfitstage7">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoapp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DietFitStage7"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.CaloriesCalculatorDiary"></activity>
+        <activity android:name=".BottomNavigationActivity.CaloriesCalculatorActivity" />
+        <activity android:name=".BottomNavigationActivity.TimerActivity" />
+        <activity android:name=".Activity.RecommendationResult" />
+        <activity android:name=".OuterActivity.SplashScreenDietFit">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.notification_list" />
+        <activity android:name=".Activity.ChangePasswordActivity" />
+        <activity android:name=".BottomNavigationActivity.Setting" />
+        <activity android:name=".Activity.MealsRecord" />
+        <activity android:name=".Activity.ExercisesRecord" />
+        <activity android:name=".Activity.DiaryRecord" />
+        <activity android:name=".Activity.user_profile" />
+        <activity android:name=".SessionManager.SessionManagerDietfit" />
+        <activity android:name=".OuterActivity.registerUser" />
+        <activity android:name=".Activity.recommendation" />
+        <activity android:name=".Activity.AllMealsActivity" />
+        <activity android:name=".OuterActivity.login" />
+        <activity android:name=".Activity.health_tips" />
+        <activity android:name=".Activity.AllExercisesActivity" />
+        <activity android:name=".Activity.diary" />
+        <activity android:name=".Activity.create_diary" />
+        <activity android:name=".BMICalculatorActivity.bmi_calculator_register" />
+        <activity android:name=".BMICalculatorActivity.bmi_calculator_recommendation" />
+        <activity android:name=".BMICalculatorActivity.bmi_calculator" />
+        <activity android:name=".Activity.about_app" />
+        <activity android:name=".BottomNavigationActivity.Dashboard" />
+    </application>
+
+</manifest>

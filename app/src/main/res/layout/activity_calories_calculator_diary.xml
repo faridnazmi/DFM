@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calories_calculate"
+    tools:context=".Activity.CaloriesCalculatorDiary"
+    android:id="@+id/cal_recommendation">
+
+    <ImageButton
+        android:id="@+id/buttonInfoActLvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/light_green"
+        app:layout_constraintBottom_toBottomOf="@+id/editActiveLevelCalDiary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="@+id/editActiveLevelCalDiary"
+        app:layout_constraintTop_toTopOf="@+id/editActiveLevelCalDiary"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_info" />
+
+    <TextView
+        android:id="@+id/textCalBMR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="left"
+        android:text="Calculate BMR"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/textCalNeed"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="left"
+        android:text="Calories Needed per day"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/BMR_ResultCalDiary"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="Click the info icon for BMI info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCalBMR"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/ViewStepsCalDiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/Steps"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCalBMR"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/BackCaloriesCalculatorDiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppinsbold"
+            android:gravity="center_horizontal"
+            android:text="CALORIES CALCULATOR"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editAgeCalDiary"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/box_diary"
+        android:ems="10"
+        android:fontFamily="@font/poppinsmedium"
+        android:gravity="center_horizontal"
+        android:hint="Age"
+        android:inputType="number"
+        android:paddingTop="6dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <EditText
+        android:id="@+id/editHeightCalDiary"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/box_diary"
+        android:ems="10"
+        android:fontFamily="@font/poppinsmedium"
+        android:gravity="center_horizontal"
+        android:hint="Height (cm)"
+        android:inputType="number|numberDecimal"
+        android:paddingTop="6dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toEndOf="@+id/editAgeCalDiary"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <EditText
+        android:id="@+id/editWeightCalDiary"
+        android:layout_width="123dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/box_diary"
+        android:ems="10"
+        android:fontFamily="@font/poppinsmedium"
+        android:gravity="center_horizontal"
+        android:hint="Weight (kg)"
+        android:inputType="number|numberDecimal"
+        android:paddingTop="6dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toEndOf="@+id/editHeightCalDiary"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <Button
+        android:id="@+id/calculate_btnCalDiary"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="#000"
+        android:gravity="center_horizontal"
+        android:text="Calculate"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editGenderCalDiary"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <EditText
+        android:id="@+id/BMR_ResultCalDiary"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:background="@drawable/box_diary"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:hint="BMR RESULT"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate_btnCalDiary"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Spinner
+        android:id="@+id/editGenderCalDiary"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/box_diary"
+        android:ems="10"
+        android:entries="@array/Gender"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:hint="Enter gender"
+        android:inputType="text"
+        android:paddingStart="5dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editWeightCalDiary" />
+
+    <Spinner
+        android:id="@+id/editActiveLevelCalDiary"
+        android:layout_width="300dp"
+        android:layout_height="37dp"
+        android:background="@drawable/box_diary"
+        android:ems="10"
+        android:entries="@array/active_level"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:hint="Enter gender"
+        android:inputType="text"
+        android:paddingStart="5dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCalNeed"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <Button
+        android:id="@+id/buttonCaloriesNeedCalDiary"
+        android:layout_width="219dp"
+        android:layout_height="39dp"
+        android:background="#000"
+        android:gravity="center_horizontal"
+        android:text="Calculate"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editActiveLevelCalDiary"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <Button
+        android:id="@+id/buttonUpdateCaloriesGoalDiary"
+        android:layout_width="219dp"
+        android:layout_height="39dp"
+        android:background="#000"
+        android:gravity="center_horizontal"
+        android:text="Update Calories Goal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ResultCaloriesNeededCalDiary"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <EditText
+        android:id="@+id/ResultCaloriesNeededCalDiary"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:background="@drawable/box_diary"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:hint="CALORIES NEEDED RESULT"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCaloriesNeedCalDiary"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <ImageButton
+        android:id="@+id/buttonInfoCalDiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/light_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textCalBMR"
+        app:srcCompat="@drawable/ic_info" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

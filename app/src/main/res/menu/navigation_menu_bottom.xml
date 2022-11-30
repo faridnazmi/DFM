@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuHome"
+      android:icon="@drawable/ic_home"
+      android:title="@string/home"/>
+
+    <item android:id="@+id/menuCaloriesCalculator"
+        android:icon="@drawable/cc"
+        android:title="@string/calories_calculator"/>
+
+    <item android:id="@+id/menuSetting"
+        android:icon="@drawable/ic_setting"
+        android:title="@string/setting"/>
+
+    <item android:id="@+id/menuTimer"
+        android:icon="@drawable/ic_timer"
+        android:title="@string/timer"/>
+
+
+
+
+</menu>

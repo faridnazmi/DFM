@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">DietFit</string>
+    <string name="login">LOGIN</string>
+    <string name="username">Username</string>
+    <string name="signuphere">Create new account? Sign Up <u>here</u></string>
+    <string name="password">Password</string>
+    <string name="signup">signup</string>
+    <string name="email">Email</string>
+    <string name="loginhere">loginhere</string>
+    <string name="register">REGISTRATION</string>
+    <string name="registerhere">Create new account? Register here</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="bmi">BMI</string>
+    <string name="register_here"><u>Register here</u></string>
+    <string name="active_level">Active Level</string>
+    <string name="btn_register">register</string>
+    <string name="calculate_here"><u>Calculate Here</u></string>
+    <string name="logout">logout</string>
+    <string name="home">Home</string>
+    <string name="title_activity_homepage1">Homepage1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="header_title">DietFit</string>
+    <string name="recommendation">Recommendation</string>
+    <string name="meals">Meals</string>
+    <string name="exercises">Exercises</string>
+    <string name="calories_diary">Calories Diary</string>
+    <string name="health_tips">Health Tips</string>
+    <string name="setting">Setting</string>
+    <string name="about_us">About application</string>
+    <string name="title_activity_home_navigation">home_navigation</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_home_nav">home_nav</string>
+    <string name="user_profile">User Profile</string>
+    <array name="active_level">
+        <item>Choose Active Level</item>
+        <item>Little/no exercise</item>
+        <item>Light exercise</item>
+        <item>Moderate exercise</item>
+        <item>Very Active</item>
+        <item>Extra Active</item>
+    </array>
+    <array name="active_levelRec">
+        <item>Choose Active Level</item>
+        <item>Little/no exercise</item>
+        <item>Light exercise</item>
+        <item>Moderate exercise</item>
+        <item>Very Active</item>
+        <item>Extra Active</item>
+    </array>
+    <array name="Gender">
+        <item>Choose Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+    <array name="MalaysianType">
+        <item>Choose Your Age Group</item>
+        <item>Child</item>
+        <item>Adolescence</item>
+        <item>Adult</item>
+        <item>Senior Adult</item>
+    </array>
+    <string name="title_activity_homepage__navigation">Homepage_Navigation</string>
+    <string name="title_activity_homepage_navigation">Homepage_Navigation</string>
+    <string name="title_activity_home_drawer">HomeDrawer</string>
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+    <string name="calculate_bmi_here"><u>Calculate BMI here</u></string>
+    <string name="forgot_password"><u>Forgot password</u></string>
+    <string name="search">Search</string>
+    <string name="wrongpassword">password should be at least 4 characters</string>
+    <string name="passwordnotmatch">Password did not match</string>
+    <string name="notification">notification</string>
+    <string name="Steps"><u>View Steps</u></string>
+    <string name="timer">Timer</string>
+    <string name="calories_calculator">Calories Calculator</string>
+    <string name="CalCalculatorLink"><u>Calories Calculator</u></string>
+
+</resources>

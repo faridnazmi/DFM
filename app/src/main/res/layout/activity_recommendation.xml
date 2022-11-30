@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.recommendation"
+    android:background="@drawable/recommendation1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:background="@color/green">
+
+            <ImageView
+                android:id="@+id/BackRecommendation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RECOMMENDATION"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppinsbold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="1400dp">
+
+
+            <TextView
+                android:id="@+id/textYourMealsSuggestion"
+                android:layout_width="375dp"
+                android:layout_height="44dp"
+                android:fontFamily="@font/poppinsbold"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:text="Your Meals Suggestion"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonCancelRecommend"
+                app:layout_constraintVertical_bias="0.098" />
+
+            <TextView
+                android:id="@+id/textYourExerciseSuggestion"
+                android:layout_width="375dp"
+                android:layout_height="44dp"
+                android:fontFamily="@font/poppinsbold"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:text="Your Exercises Suggestion"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardMealsSuggestionLayout"
+                app:layout_constraintVertical_bias="0.04" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="17dp"
+                android:text="Please update these information to get newest recommendation. "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/BMICalculatorTextRec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="308dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/calculate_bmi_here"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextBMIRec"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editTextAgeRec"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="72dp"
+                android:background="@drawable/c_box"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Input Age"
+                android:inputType="number"
+                android:maxLength="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <EditText
+                android:id="@+id/editTextBMIRec"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/c_box"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Input BMI"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextAgeRec" />
+
+            <EditText
+                android:id="@+id/editTextGenderRec"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/c_box"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Input Gender"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BMICalculatorTextRec" />
+
+            <EditText
+                android:id="@+id/editTextALRec"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/c_box"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Input Active Level"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextGenderRec" />
+
+            <Button
+                android:id="@+id/buttonSuggestion"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="96dp"
+                android:text="Suggest"
+                app:layout_constraintEnd_toEndOf="@+id/editTextALRec"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editTextALRec"
+                app:layout_constraintTop_toBottomOf="@+id/editTextALRec" />
+
+            <Button
+                android:id="@+id/buttonCancelRecommend"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="152dp"
+                android:text="Clear All"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintEnd_toEndOf="@+id/editTextALRec"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editTextALRec"
+                app:layout_constraintTop_toBottomOf="@+id/editTextALRec" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Age"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/editTextAgeRec"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppinsbold"
+                android:text="BMI"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/editTextBMIRec"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextAgeRec"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Gender"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/editTextGenderRec"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/BMICalculatorTextRec"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Active Level"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@+id/editTextALRec"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextGenderRec"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ProgressBar
+                android:id="@+id/progressBarRecommendation"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextALRec"
+                app:layout_constraintVertical_bias="0.023" />
+
+            <LinearLayout
+                android:id="@+id/cardExSuggestionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textYourExerciseSuggestion"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_exercise_suggestion"
+                    android:layout_width="350dp"
+                    android:layout_height="210dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="350dp"
+                        android:layout_height="210dp">
+
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="89dp"
+                            android:layout_marginEnd="243dp"
+                            android:layout_marginRight="243dp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:text="Evening :" />
+
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="157dp"
+                            android:layout_marginEnd="242dp"
+                            android:layout_marginRight="242dp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:text="Night :" />
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginEnd="242dp"
+                            android:layout_marginRight="242dp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:text="Morning :" />
+
+                        <TextView
+                            android:id="@+id/morningworkoutname"
+                            android:layout_width="174dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="97dp"
+                            android:layout_marginLeft="97dp"
+                            android:layout_marginTop="26dp"
+                            android:layout_marginEnd="79dp"
+                            android:layout_marginRight="79dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:hint="" />
+
+                        <TextView
+                            android:id="@+id/eveningworkoutname"
+                            android:layout_width="174dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="97dp"
+                            android:layout_marginLeft="97dp"
+                            android:layout_marginTop="90dp"
+                            android:layout_marginEnd="80dp"
+                            android:layout_marginRight="80dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:hint="" />
+
+                        <TextView
+                            android:id="@+id/nightworkoutname"
+                            android:layout_width="174dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="97dp"
+                            android:layout_marginLeft="97dp"
+                            android:layout_marginTop="158dp"
+                            android:layout_marginEnd="79dp"
+                            android:layout_marginRight="79dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:hint="" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardMealsSuggestionLayout"
+                android:layout_width="match_parent"
+
+                android:layout_height="230dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textYourMealsSuggestion">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_meals_suggestion"
+                    android:layout_width="350dp"
+                    android:layout_height="210dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="350dp"
+                        android:layout_height="210dp">
+
+                        <TextView
+                            android:id="@+id/textView28"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="152dp"
+                            android:layout_marginEnd="242dp"
+                            android:layout_marginRight="242dp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:text="Supper :" />
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="242dp"
+                            android:layout_marginRight="242dp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:text="Breakfast :" />
+
+                        <TextView
+                            android:id="@+id/meals_breakfast"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="105dp"
+                            android:layout_marginLeft="105dp"
+                            android:layout_marginTop="21dp"
+                            android:layout_marginEnd="49dp"
+                            android:layout_marginRight="49dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:hint="" />
+
+                        <TextView
+                            android:id="@+id/RecLunchMeal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="105dp"
+                            android:layout_marginLeft="105dp"
+                            android:layout_marginTop="63dp"
+                            android:layout_marginEnd="29dp"
+                            android:layout_marginRight="29dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:hint="" />
+
+                        <TextView
+                            android:id="@+id/DinnerMeals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="105dp"
+                            android:layout_marginLeft="105dp"
+                            android:layout_marginTop="107dp"
+                            android:layout_marginEnd="77dp"
+                            android:layout_marginRight="77dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:hint="" />
+
+                        <TextView
+                            android:id="@+id/SupperMeals"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="105dp"
+                            android:layout_marginLeft="105dp"
+                            android:layout_marginTop="151dp"
+                            android:layout_marginEnd="78dp"
+                            android:layout_marginRight="78dp"
+                            android:fontFamily="@font/poppinsmedium"
+                            android:hint="" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginTop="63dp"
+                            android:layout_marginEnd="241dp"
+                            android:layout_marginRight="241dp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:text="Lunch :" />
+
+                        <TextView
+                            android:id="@+id/textView27"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="106dp"
+                            android:layout_marginEnd="244dp"
+                            android:layout_marginRight="244dp"
+                            android:fontFamily="@font/poppinsbold"
+                            android:text="Dinner :" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageViewInfoRecActLvl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextALRec"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.816"
+                app:layout_constraintStart_toStartOf="@+id/editTextALRec"
+                app:layout_constraintTop_toTopOf="@+id/editTextALRec"
+                app:srcCompat="@drawable/ic_info" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>
